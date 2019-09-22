@@ -215,7 +215,7 @@ MonoBehaviour:
   speed: 30
   rollMult: -45
   pitchMult: 30
-  shieldLevel: 1
+  _shieldLevel: 1
 --- !u!54 &199632049
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -569,7 +569,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748725983}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 2115261907}
   - component: {fileID: 2115261906}
   m_Layer: 8
-  m_Name: Cube
+  m_Name: Wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
