@@ -32,7 +32,7 @@ public class Weapon : MonoBehaviour
 {
     static public Transform PROJECTILE_ANCHOR;
 
-    [Header("Set Dynamically")]
+    [Header("Set Dynamically")] [SerializeField]
     private WeaponType _type = WeaponType.none;
     public WeaponDefinition def;
     public GameObject collar;
@@ -113,6 +113,9 @@ public class Weapon : MonoBehaviour
                 p.rigid.velocity = vel;
                 p = MakeProjectile();
                 p.transform.rotation = Quaternion.AngleAxis(10, Vector3.back);
+                p.rigid.velocity = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(-10, Vector3.back);
                 p.rigid.velocity = p.transform.rotation * vel;
                 break;
         }
