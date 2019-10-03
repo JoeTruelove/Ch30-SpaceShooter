@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2526941813099208489}
   - component: {fileID: 5925595657157774793}
   - component: {fileID: 5495378455817611872}
-  - component: {fileID: 8137829918923466784}
+  - component: {fileID: 478131385898051624}
   m_Layer: 9
   m_Name: WingL
   m_TagString: Untagged
@@ -78,8 +78,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &8137829918923466784
-SphereCollider:
+--- !u!136 &478131385898051624
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,8 +88,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1828505628829554090
 GameObject:
@@ -193,7 +194,7 @@ GameObject:
   - component: {fileID: 4954783769031177183}
   - component: {fileID: 462896326213887022}
   - component: {fileID: 4661794734271226334}
-  - component: {fileID: 8234076133759857772}
+  - component: {fileID: 765046577352589020}
   m_Layer: 9
   m_Name: Fuselage
   m_TagString: Untagged
@@ -260,8 +261,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &8234076133759857772
-SphereCollider:
+--- !u!136 &765046577352589020
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -270,8 +271,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2838895559545397790
 GameObject:
@@ -284,7 +286,7 @@ GameObject:
   - component: {fileID: 7948327100582670115}
   - component: {fileID: 5041807037524599226}
   - component: {fileID: 2769013241596485382}
-  - component: {fileID: 6236777300981054131}
+  - component: {fileID: 8461746966305643036}
   m_Layer: 9
   m_Name: WingR
   m_TagString: Untagged
@@ -351,8 +353,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &6236777300981054131
-SphereCollider:
+--- !u!136 &8461746966305643036
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -361,8 +363,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: 0.5
+  m_Height: 1.0000002
+  m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5571399133982555848
 GameObject:
@@ -429,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b98a4a7773342b41b86ea6a0f29a122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: -2.5
+  radius: 3.5
   keepOnScreen: 0
   isOnScreen: 1
   camWidth: 0
